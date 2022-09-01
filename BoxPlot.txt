@@ -1,0 +1,1359 @@
+Baseline Noise vs Tube Type
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          BaselineNoise   R-squared:                       0.007
+Model:                            OLS   Adj. R-squared:                 -0.097
+Method:                 Least Squares   F-statistic:                   0.06426
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.997
+Time:                        17:10:24   Log-Likelihood:                -57.253
+No. Observations:                  54   AIC:                             126.5
+Df Residuals:                      48   BIC:                             138.4
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept         3.5386      0.247     14.327      0.000       3.042       4.035
+TubeType[T.B]    -0.0310      0.349     -0.089      0.930      -0.733       0.671
+TubeType[T.C]     0.1489      0.349      0.426      0.672      -0.553       0.851
+TubeType[T.D]     0.0230      0.349      0.066      0.948      -0.679       0.725
+TubeType[T.E]     0.0081      0.349      0.023      0.982      -0.694       0.710
+TubeType[T.F]     0.0100      0.349      0.029      0.977      -0.692       0.712
+==============================================================================
+Omnibus:                       29.824   Durbin-Watson:                   2.858
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                9.414
+Skew:                          -0.769   Prob(JB):                      0.00903
+Kurtosis:                       1.653   Cond. No.                         6.85
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+             df     sum_sq   mean_sq         F    PR(>F)
+TubeType   5.0   0.176410  0.035282  0.064262  0.997038
+Residual  48.0  26.353652  0.549034       NaN       NaN 
+
+              sum_sq    df         F    PR(>F)
+TubeType   0.176410   5.0  0.064262  0.997038
+Residual  26.353652  48.0       NaN       NaN
+
+
+
+Peak Width vs Tube Type
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              PeakWidth   R-squared:                       0.118
+Model:                            OLS   Adj. R-squared:                  0.026
+Method:                 Least Squares   F-statistic:                     1.288
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.285
+Time:                        17:10:25   Log-Likelihood:                 192.66
+No. Observations:                  54   AIC:                            -373.3
+Df Residuals:                      48   BIC:                            -361.4
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept         0.0210      0.002      8.699      0.000       0.016       0.026
+TubeType[T.B]     0.0081      0.003      2.376      0.022       0.001       0.015
+TubeType[T.C]     0.0063      0.003      1.855      0.070      -0.001       0.013
+TubeType[T.D]     0.0041      0.003      1.204      0.234      -0.003       0.011
+TubeType[T.E]     0.0047      0.003      1.367      0.178      -0.002       0.012
+TubeType[T.F]     0.0037      0.003      1.074      0.288      -0.003       0.011
+==============================================================================
+Omnibus:                       14.700   Durbin-Watson:                   2.217
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               21.137
+Skew:                           0.914   Prob(JB):                     2.57e-05
+Kurtosis:                       5.460   Cond. No.                         6.85
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+             df    sum_sq   mean_sq         F   PR(>F)
+TubeType   5.0  0.000338  0.000068  1.287626  0.28484
+Residual  48.0  0.002518  0.000052       NaN      NaN 
+
+             sum_sq    df         F   PR(>F)
+TubeType  0.000338   5.0  1.287626  0.28484
+Residual  0.002518  48.0       NaN      NaN
+
+
+
+Signal to Noise vs Tube Type
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     SN   R-squared:                       0.095
+Model:                            OLS   Adj. R-squared:                  0.001
+Method:                 Least Squares   F-statistic:                     1.011
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.422
+Time:                        17:10:25   Log-Likelihood:                -234.91
+No. Observations:                  54   AIC:                             481.8
+Df Residuals:                      48   BIC:                             493.7
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept        92.1656      6.629     13.903      0.000      78.837     105.494
+TubeType[T.B]     1.9022      9.375      0.203      0.840     -16.947      20.752
+TubeType[T.C]   -15.3300      9.375     -1.635      0.109     -34.179       3.519
+TubeType[T.D]    -1.8989      9.375     -0.203      0.840     -20.748      16.950
+TubeType[T.E]    -9.2111      9.375     -0.983      0.331     -28.060       9.638
+TubeType[T.F]    -0.6033      9.375     -0.064      0.949     -19.453      18.246
+==============================================================================
+Omnibus:                        5.229   Durbin-Watson:                   1.983
+Prob(Omnibus):                  0.073   Jarque-Bera (JB):                5.831
+Skew:                          -0.274   Prob(JB):                       0.0542
+Kurtosis:                       4.514   Cond. No.                         6.85
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+             df        sum_sq     mean_sq         F    PR(>F)
+TubeType   5.0   1998.862165  399.772433  1.010827  0.421703
+Residual  48.0  18983.537978  395.490375       NaN       NaN 
+
+                 sum_sq    df         F    PR(>F)
+TubeType   1998.862165   5.0  1.010827  0.421703
+Residual  18983.537978  48.0       NaN       NaN
+
+
+
+Peak Width vs Cost
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              PeakWidth   R-squared:                       0.027
+Model:                            OLS   Adj. R-squared:                  0.008
+Method:                 Least Squares   F-statistic:                     1.443
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.235
+Time:                        17:10:25   Log-Likelihood:                 190.00
+No. Observations:                  54   AIC:                            -376.0
+Df Residuals:                      52   BIC:                            -372.0
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0229      0.002      9.809      0.000       0.018       0.028
+Cost           0.0004      0.000      1.201      0.235      -0.000       0.001
+==============================================================================
+Omnibus:                       19.279   Durbin-Watson:                   1.982
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               28.500
+Skew:                           1.218   Prob(JB):                     6.47e-07
+Kurtosis:                       5.595   Cond. No.                         16.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+             df    sum_sq   mean_sq         F    PR(>F)
+Cost       1.0  0.000077  0.000077  1.443267  0.235055
+Residual  52.0  0.002778  0.000053       NaN       NaN 
+
+             sum_sq    df         F    PR(>F)
+Cost      0.000077   1.0  1.443267  0.235055
+Residual  0.002778  52.0       NaN       NaN
+
+
+
+Cost per tube £ vs Peak Width
+Slope =  0.00039999640365637494 
+ intercept =  0.022938837675572456 
+ r =  0.164333788131383 
+ p =  0.23505467101088764 
+ standard error 0.0003329528372315734 
+
+
+Same tube vs Quality
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               SameTube   R-squared:                       0.017
+Model:                            OLS   Adj. R-squared:                 -0.002
+Method:                 Least Squares   F-statistic:                    0.8966
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.348
+Time:                        17:10:28   Log-Likelihood:                -165.07
+No. Observations:                  54   AIC:                             334.1
+Df Residuals:                      52   BIC:                             338.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     12.5109      3.259      3.839      0.000       5.971      19.050
+Quality       -3.4244      3.617     -0.947      0.348     -10.682       3.833
+==============================================================================
+Omnibus:                       12.445   Durbin-Watson:                   0.052
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):                3.165
+Skew:                           0.030   Prob(JB):                        0.205
+Kurtosis:                       1.816   Cond. No.                         9.08
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+             df       sum_sq    mean_sq         F    PR(>F)
+Quality    1.0    24.635726  24.635726  0.896557  0.348086
+Residual  52.0  1428.864274  27.478159       NaN       NaN 
+
+                sum_sq    df         F    PR(>F)
+Quality     24.635726   1.0  0.896557  0.348086
+Residual  1428.864274  52.0       NaN       NaN
+
+
+
+Quality vs SameTube
+Slope =  -3.42442053038138 
+ intercept =  12.510901458475427 
+ r =  -0.1301892630656088 
+ p =  0.3480861840976799 
+ standard error 3.61658121602654 
+
+
+Peak Width vs Margin of error of outer diameter
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              PeakWidth   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                 -0.001
+Method:                 Least Squares   F-statistic:                    0.9605
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.332
+Time:                        17:10:28   Log-Likelihood:                 189.75
+No. Observations:                  54   AIC:                            -375.5
+Df Residuals:                      52   BIC:                            -371.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0273      0.002     12.815      0.000       0.023       0.032
+MOEO          -0.1097      0.112     -0.980      0.332      -0.334       0.115
+==============================================================================
+Omnibus:                       24.915   Durbin-Watson:                   1.969
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               47.362
+Skew:                           1.420   Prob(JB):                     5.19e-11
+Kurtosis:                       6.603   Cond. No.                         112.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+             df    sum_sq   mean_sq         F    PR(>F)
+MOEO       1.0  0.000052  0.000052  0.960484  0.331603
+Residual  52.0  0.002804  0.000054       NaN       NaN 
+
+             sum_sq    df         F    PR(>F)
+MOEO      0.000052   1.0  0.960484  0.331603
+Residual  0.002804  52.0       NaN       NaN
+
+
+
+Margin of error of outer diameter vs Signal to Noise
+Slope =  -77.52768099109574 
+ intercept =  89.28041966705382 
+ r =  -0.035116869117739376 
+ p =  0.8009678225492028 
+ standard error 305.9647416475774 
+
+
+Signal to Noise vs cost
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     SN   R-squared:                       0.002
+Model:                            OLS   Adj. R-squared:                 -0.017
+Method:                 Least Squares   F-statistic:                    0.1091
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.743
+Time:                        17:10:28   Log-Likelihood:                -237.55
+No. Observations:                  54   AIC:                             479.1
+Df Residuals:                      52   BIC:                             483.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     86.0564      6.420     13.405      0.000      73.174      98.939
+Cost           0.3019      0.914      0.330      0.743      -1.532       2.136
+==============================================================================
+Omnibus:                        1.448   Durbin-Watson:                   1.788
+Prob(Omnibus):                  0.485   Jarque-Bera (JB):                0.706
+Skew:                           0.009   Prob(JB):                        0.703
+Kurtosis:                       3.560   Cond. No.                         16.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+             df        sum_sq     mean_sq        F    PR(>F)
+Cost       1.0     43.922371   43.922371  0.10908  0.742521
+Residual  52.0  20938.477772  402.663034      NaN       NaN 
+
+                 sum_sq    df        F    PR(>F)
+Cost         43.922371   1.0  0.10908  0.742521
+Residual  20938.477772  52.0      NaN       NaN
+
+
+
+Cost per tube £ vs Signal to Noise
+Slope =  0.30187867458138923 
+ intercept =  86.05642826228134 
+ r =  0.04575255016864846 
+ p =  0.7425212804447237 
+ standard error 0.914029951000808 
+
+
+Signal to Noise vs Diameter Outer
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     SN   R-squared:                       0.002
+Model:                            OLS   Adj. R-squared:                 -0.017
+Method:                 Least Squares   F-statistic:                   0.09828
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.755
+Time:                        17:10:28   Log-Likelihood:                -237.56
+No. Observations:                  54   AIC:                             479.1
+Df Residuals:                      52   BIC:                             483.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       686.0820   1907.872      0.360      0.721   -3142.344    4514.508
+DiameterOuter  -120.4767    384.303     -0.313      0.755    -891.636     650.683
+==============================================================================
+Omnibus:                        1.028   Durbin-Watson:                   1.790
+Prob(Omnibus):                  0.598   Jarque-Bera (JB):                0.386
+Skew:                           0.089   Prob(JB):                        0.824
+Kurtosis:                       3.374   Cond. No.                     3.61e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.61e+03. This might indicate that there are
+strong multicollinearity or other numerical problems. 
+
+                  df        sum_sq     mean_sq         F    PR(>F)
+DiameterOuter   1.0     39.581420   39.581420  0.098279  0.755159
+Residual       52.0  20942.818723  402.746514       NaN       NaN 
+
+                      sum_sq    df         F    PR(>F)
+DiameterOuter     39.581420   1.0  0.098279  0.755159
+Residual       20942.818723  52.0       NaN       NaN
+
+
+
+Diameter Outer vs Signal to Noise
+Slope =  -120.4767143381024 
+ intercept =  686.0820187018797 
+ r =  -0.043432827328268094 
+ p =  0.7551591581956293 
+ standard error 384.3026029222957 
+
+
+Signal to Noise vs Diameter Inner
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     SN   R-squared:                       0.003
+Model:                            OLS   Adj. R-squared:                 -0.016
+Method:                 Least Squares   F-statistic:                    0.1409
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.709
+Time:                        17:10:29   Log-Likelihood:                -237.54
+No. Observations:                  54   AIC:                             479.1
+Df Residuals:                      52   BIC:                             483.0
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       192.5001    278.474      0.691      0.492    -366.300     751.300
+DiameterInner   -24.9960     66.591     -0.375      0.709    -158.620     108.628
+==============================================================================
+Omnibus:                        1.012   Durbin-Watson:                   1.794
+Prob(Omnibus):                  0.603   Jarque-Bera (JB):                0.372
+Skew:                           0.075   Prob(JB):                        0.830
+Kurtosis:                       3.377   Cond. No.                         451.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+                  df        sum_sq     mean_sq       F    PR(>F)
+DiameterInner   1.0     56.700418   56.700418  0.1409  0.708915
+Residual       52.0  20925.699724  402.417302     NaN       NaN 
+
+                      sum_sq    df       F    PR(>F)
+DiameterInner     56.700418   1.0  0.1409  0.708915
+Residual       20925.699724  52.0     NaN       NaN
+
+
+
+Diameter Inner vs Signal to Noise
+Slope =  -24.995959595959516 
+ intercept =  192.50014141414107 
+ r =  -0.051983503781274316 
+ p =  0.7089151925851981 
+ standard error 66.5909185970133 
+
+
+Signal to Noise vs Camber
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     SN   R-squared:                       0.007
+Model:                            OLS   Adj. R-squared:                 -0.012
+Method:                 Least Squares   F-statistic:                    0.3622
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.550
+Time:                        17:10:29   Log-Likelihood:                -237.42
+No. Observations:                  54   AIC:                             478.8
+Df Residuals:                      52   BIC:                             482.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     92.9144      8.647     10.745      0.000      75.563     110.266
+Camber      -121.4505    201.800     -0.602      0.550    -526.392     283.491
+==============================================================================
+Omnibus:                        2.029   Durbin-Watson:                   1.804
+Prob(Omnibus):                  0.363   Jarque-Bera (JB):                1.259
+Skew:                          -0.098   Prob(JB):                        0.533
+Kurtosis:                       3.722   Cond. No.                         74.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+             df        sum_sq     mean_sq         F    PR(>F)
+Camber     1.0    145.142304  145.142304  0.362207  0.549898
+Residual  52.0  20837.257839  400.716497       NaN       NaN 
+
+                 sum_sq    df         F    PR(>F)
+Camber      145.142304   1.0  0.362207  0.549898
+Residual  20837.257839  52.0       NaN       NaN
+
+
+
+Camber vs Signal to Noise
+Slope =  -121.45054200542012 
+ intercept =  92.91435907859079 
+ r =  -0.08317052138893449 
+ p =  0.5498982540957813 
+ standard error 201.79995349140572 
+
+
+Signal to Noise vs Frequency
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     SN   R-squared:                       0.001
+Model:                            OLS   Adj. R-squared:                 -0.018
+Method:                 Least Squares   F-statistic:                   0.04620
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.831
+Time:                        17:10:29   Log-Likelihood:                -237.58
+No. Observations:                  54   AIC:                             479.2
+Df Residuals:                      52   BIC:                             483.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     87.1650      4.656     18.721      0.000      77.822      96.508
+Frequency      0.0039      0.018      0.215      0.831      -0.032       0.040
+==============================================================================
+Omnibus:                        1.339   Durbin-Watson:                   1.790
+Prob(Omnibus):                  0.512   Jarque-Bera (JB):                0.613
+Skew:                           0.015   Prob(JB):                        0.736
+Kurtosis:                       3.521   Cond. No.                         442.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+              df        sum_sq     mean_sq         F    PR(>F)
+Frequency   1.0     18.627358   18.627358  0.046205  0.830645
+Residual   52.0  20963.772784  403.149477       NaN       NaN 
+
+                  sum_sq    df         F    PR(>F)
+Frequency     18.627358   1.0  0.046205  0.830645
+Residual   20963.772784  52.0       NaN       NaN
+
+
+
+Frequency vs Signal to Noise
+Slope =  0.003858752997601919 
+ intercept =  87.16503224087397 
+ r =  0.02979531987366614 
+ p =  0.8306451295990138 
+ standard error 0.017951650951336173 
+
+
+Signal to Noise vs Thickness of wall
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     SN   R-squared:                       0.003
+Model:                            OLS   Adj. R-squared:                 -0.016
+Method:                 Least Squares   F-statistic:                    0.1444
+Date:                Thu, 16 Jun 2022   Prob (F-statistic):              0.706
+Time:                        17:10:29   Log-Likelihood:                -237.53
+No. Observations:                  54   AIC:                             479.1
+Df Residuals:                      52   BIC:                             483.0
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept        64.5286     61.765      1.045      0.301     -59.411     188.469
+ThicknessWall    59.9022    157.644      0.380      0.706    -256.433     376.238
+==============================================================================
+Omnibus:                        1.018   Durbin-Watson:                   1.795
+Prob(Omnibus):                  0.601   Jarque-Bera (JB):                0.374
+Skew:                           0.072   Prob(JB):                        0.829
+Kurtosis:                       3.382   Cond. No.                         66.6
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified. 
+
+                  df        sum_sq     mean_sq         F    PR(>F)
+ThicknessWall   1.0     58.100455   58.100455  0.144388  0.705504
+Residual       52.0  20924.299688  402.390379       NaN       NaN 
+
+                      sum_sq    df         F    PR(>F)
+ThicknessWall     58.100455   1.0  0.144388  0.705504
+Residual       20924.299688  52.0       NaN       NaN
+
+
+
+Thickness of wall vs Signal to Noise
+Slope =  59.90221357584364 
+ intercept =  64.52864560655891 
+ r =  0.05262137398074865 
+ p =  0.705504485697765 
+ standard error 157.64380149919293 
+
+
+Baseline Noise vs Signal to Noise
+Slope =  -16.379660344720378 
+ intercept =  146.3702898552614 
+ r =  -0.5824336265477938 
+ p =  3.8320839654891246e-06 
+ standard error 3.1701680855717957 
+
+
+Margin of error of Diameter Inner vs Signal to Noise
+Slope =  -5.906282556506769 
+ intercept =  88.4675605834126 
+ r =  -0.02473324166427809 
+ p =  0.8590954172574253 
+ standard error 33.10538403200051 
+
+
+Concentricity vs Signal to Noise
+Slope =  3.7930663481995985 
+ intercept =  87.81542940602128 
+ r =  0.0065182472094655695 
+ p =  0.9626895070219889 
+ standard error 80.69538797566844 
+
+
+Baseline Noise vs Peak Width
+Slope =  0.006523414500412696 
+ intercept =  0.0022249391294933453 
+ r =  0.6287882710986549 
+ p =  3.5516766475829536e-07 
+ standard error 0.00111869586361051 
+
+
+Diameter Outer vs Peak Width
+Slope =  0.03795379537953892 
+ intercept =  -0.16294013568023952 
+ r =  0.037090108760151806 
+ p =  0.7900315570833323 
+ standard error 0.14180661923212554 
+
+
+Margin of error of outer diameter vs Peak Width
+Slope =  -0.10967866821525352 
+ intercept =  0.02732773906310491 
+ r =  -0.13466944559909558 
+ p =  0.3316028082984933 
+ standard error 0.11191212024791602 
+
+
+Diameter Inner vs Peak Width
+Slope =  0.004040404040404032 
+ intercept =  0.00858585858585862 
+ r =  0.022777625048689777 
+ p =  0.8701363431573927 
+ standard error 0.0245924612481893 
+
+
+Margin of error of Diameter Inner vs Peak Width
+Slope =  -0.0031978982651628433 
+ intercept =  0.02574797300357838 
+ r =  -0.03630106554247906 
+ p =  0.794399974833417 
+ standard error 0.012208358117403305 
+
+
+Concentricity vs Peak Width
+Slope =  -0.012222249119777508 
+ intercept =  0.025996852986032094 
+ r =  -0.056935013491301166 
+ p =  0.6825928981187472 
+ standard error 0.02972110724591634 
+
+
+Camber vs Peak Width
+Slope =  -0.10308265582655832 
+ intercept =  0.029673509485094847 
+ r =  -0.19135661257313372 
+ p =  0.16570953648207504 
+ standard error 0.07332293868373473 
+
+
+Frequency vs Peak Width
+Slope =  9.992006394884095e-06 
+ intercept =  0.023383160138555816 
+ r =  0.20914220579884313 
+ p =  0.12907646443741463 
+ standard error 6.478839737768046e-06 
+
+
+Thickness of wall vs Peak Width
+Slope =  -0.008126566512781718 
+ intercept =  0.028662355057359454 
+ r =  -0.019351485777418475 
+ p =  0.8895376003430872 
+ standard error 0.058225037215505544 
+
+
+Signal to Noise vs Peak Width
+Slope =  -0.0003086148193544801 
+ intercept =  0.05263198451597681 
+ r =  -0.8365746204534802 
+ p =  3.361167373918968e-15 
+ standard error 2.802686103073299e-05 
+
+
+
+
+                       STANDARD DEVIATION AND STANDARD ERROR 
+
+          Base Line Noise
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Peak Width
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Cost Per Tube £
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Diameter Outer
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Margin of error of outer diameter
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Concentricity
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Camber
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Frequency
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Thickness of wall
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Signal to Noise
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Diameter Inner
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Margin of error of outer diameter
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Quality
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Peak Intensity
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+          Absolute Area
+Standard Deviation:
+  SameTube            5.236843
+SameRun            10.484490
+PeakWidth           0.007340
+Absolute         2172.764483
+SN                 19.897094
+Intensity          65.528245
+BaselineNoise       0.707508
+Quality             0.199094
+TubeTypeNum         1.723861
+Scans               0.000000
+Cost                3.015592
+DiameterOuter       0.007173
+MOEO                0.009013
+DiameterInner       0.041380
+MOEI                0.083321
+Concentricity       0.034192
+Camber              0.013626
+Frequency         153.635196
+ThicknessWall       0.017479
+QualityTube         0.599948
+CostvsQuality       0.279127
+dtype: float64 
+ standard Error:
+ SameTube           1.234336
+SameRun            2.471218
+PeakWidth          0.001730
+Absolute         512.125500
+SN                 4.689790
+Intensity         15.445155
+BaselineNoise      0.166761
+Quality            0.046927
+TubeTypeNum        0.406318
+Scans              0.000000
+Cost               0.710782
+DiameterOuter      0.001691
+MOEO               0.002124
+DiameterInner      0.009753
+MOEI               0.019639
+Concentricity      0.008059
+Camber             0.003212
+Frequency         36.212163
+ThicknessWall      0.004120
+QualityTube        0.141409
+CostvsQuality      0.065791
+dtype: float64 
+
+--------P-VALES AND R-VALUES--------
